@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
 </head>
-<body class="font-nunito bg-black text-white scroll-smooth">
+<body class="text-white bg-black font-nunito">
     <!-- // ANCHOR navigation bar -->
     <nav class="p-4">
         <div class="flex items-center justify-between pr-4">
@@ -15,7 +15,7 @@
                 <img class="w-16" src="./images/logo.png" alt="">
                 <span class="text-2xl font-bold text-blue-600">AnimePort</span>
             </div>
-            <ul class="hidden md:flex space-x-10 text-white font-bold text-sm uppercase">
+            <ul class="hidden space-x-10 text-sm font-bold text-white uppercase md:flex">
                 <li>
                     <a href="#" class="hover:text-blue-600">Home</a>
                 </li>
@@ -33,9 +33,9 @@
     </nav>
      <!-- //ANCHOR home content -->
     <div id="#" class="p-4">
-        <div class="p-12 md:flex items-center">
+        <div class="items-center p-12 my-12 md:flex">
             <div class="m-6">
-                <h1 class="text-4xl md:text-6xl font-bold">Anime Port</h1>
+                <h1 class="text-4xl font-bold md:text-6xl">Anime Port</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus voluptas fugit maxime nostrum voluptate quaerat. Esse, odio quis a nobis praesentium alias aliquam sint reiciendis nihil perspiciatis, pariatur ducimus. Quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ex repellendus molestias praesentium eum odio quam, inventore rerum ut harum consectetur est unde tempore animi, nihil minima debitis ab provident!</p>
                 <br><br>
                 <h1 class="text-2xl font-bold">Sample Projects</h1>
@@ -50,50 +50,136 @@
         </div>
     </div>
      <!-- //ANCHOR about content -->
-     <div id="about"></div>
-    <div class="py-20">
-        <div  class="md:flex p-4 mx-20 justify-between">
-            <h1 class="font-bold text-5xl">We build bridges between <span class="font-normal">companies and customers</span></h1>
-            <p class="ml-6 w-1/2 text-center md:text-left">a group of talented students who are passionate about developing mobile apps, web apps, and UI/UX designs. We are a team of creative thinkers who are dedicated to delivering innovative solutions to our clients.</p>
+    <div id="about"></div>
+    <div class="py-16">
+        <div  class="justify-between p-4 mx-20 md:flex">
+            <h1 class="text-5xl font-bold">We build bridges between <span class="font-normal">companies and customers</span></h1>
+            <p class="w-1/2 ml-6 text-center md:text-left">a group of talented students who are passionate about developing mobile apps, web apps, and UI/UX designs. We are a team of creative thinkers who are dedicated to delivering innovative solutions to our clients.</p>
         </div> 
         <br>
-        <img class="max-h-96 object-cover" width="100%" height="70px" src="https://i.pinimg.com/564x/e4/ea/3c/e4ea3c3aaaff33121430b9c1f64d7b77.jpg" alt="">
-        <hr class="border border-blue-600 m-12 my-20">
-        <div class="md:flex p-4 mx-20 justify-between">
-            <h1 class="font-bold text-5xl">Together we are strong</h1>
-            <div class="ml-6 w-1/2 text-center md:text-left">
+        <img class="object-cover max-h-96" width="100%" height="70px" src="https://i.pinimg.com/564x/e4/ea/3c/e4ea3c3aaaff33121430b9c1f64d7b77.jpg" alt="">
+        <div class="justify-between p-4 mx-20 mt-14 md:flex">
+            <h1 class="text-5xl font-bold">Together we are strong</h1>
+            <div class="w-1/2 ml-6 text-center md:text-left">
                 <p>a group of talented students who are passionate about developing mobile apps, web apps, and UI/UX designs. We are a team of creative thinkers who are dedicated to delivering innovative solutions to our clients.</p>
                 <br>
                 <br>
                 <p>a group of talented students who are passionate about developing mobile apps, web apps, and UI/UX designs. We are a team of creative thinkers who are dedicated to delivering innovative solutions to our clients.</p>
             </div>
         </div> 
+        <hr class="m-16 mb-6 border border-blue-600">
+        <div id="schedule"></div>
     </div>
+    
      <!-- //ANCHOR about schedule -->
-    <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-icon bg-blue-500">
-            <i class="fas fa-check"></i>
-          </div>
-          <div class="timeline-content">
-            <h3 class="text-lg font-bold">Event 1</h3>
-            <p>Description of Event 1</p>
-            <span class="text-gray-500">Date of Event 1</span>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <div class="timeline-icon bg-green-500">
-            <i class="fas fa-check"></i>
-          </div>
-          <div class="timeline-content">
-            <h3 class="text-lg font-bold">Event 2</h3>
-            <p>Description of Event 2</p>
-            <span class="text-gray-500">Date of Event 2</span>
-          </div>
-        </div>
-      
+    <div class="pb-6 pl-6 pr-6 mx-96">
+        <div class="timeline W-[100%]">
+            <div class="w-[100%] flex justify-center">
+                <h1 class="text-5xl font-bold">Schedule</h1>
+            </div>
+            <br><br><br><br>
+            <div class="timeline-item w-[100%] flex justify-between my-4">
+                <div class="w-2"></div>
+                <div class="self-end timeline-content">
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 p-2 mr-2 bg-blue-600"></div>
+                        <h3 class="text-lg font-bold">Monday</h3>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">GNED 06 5:00 PM - 7:00 PM</p>
+                        <p class="ml-4 text-gray-500">Subject Teacher</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">GNED 06 5:00 PM - 7:00 PM</p>
+                        <p class="ml-4 text-gray-500">Subject Teacher</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">GNED 06 5:00 PM - 7:00 PM</p>
+                        <p class="ml-4 text-gray-500">Subject Teacher</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item w-[100%] flex justify-between my-4">
+                <div class="timeline-content">
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 p-2 mr-2 bg-blue-600"></div>
+                        <h3 class="text-lg font-bold">Thursday</h3>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">GNED 06 5:00 PM - 7:00 PM</p>
+                        <p class="ml-4 text-gray-500">Subject Teacher</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">GNED 06 5:00 PM - 7:00 PM</p>
+                        <p class="ml-4 text-gray-500">Subject Teacher</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">GNED 06 5:00 PM - 7:00 PM</p>
+                        <p class="ml-4 text-gray-500">Subject Teacher</p>
+                    </div>
+                </div>
+                <div class="w-2"></div>
+            </div>
+
+            <div class="timeline-item w-[100%] flex justify-between my-4">
+                <div class="w-2"></div>
+                <div class="timeline-content">
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 p-2 mr-2 bg-blue-600"></div>
+                        <h3 class="text-lg font-bold">Friday</h3>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">GNED 06 5:00 PM - 7:00 PM</p>
+                        <p class="ml-4 text-gray-500">Subject Teacher</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">GNED 06 5:00 PM - 7:00 PM</p>
+                        <p class="ml-4 text-gray-500">Subject Teacher</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">GNED 06 5:00 PM - 7:00 PM</p>
+                        <p class="ml-4 text-gray-500">Subject Teacher</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item w-[100%] flex justify-between my-4">
+                <div class="timeline-content">
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 p-2 mr-2 bg-blue-600"></div>
+                        <h3 class="text-lg font-bold">Saturday</h3>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">GNED 06 5:00 PM - 7:00 PM</p>
+                        <p class="ml-4 text-gray-500">Subject Teacher</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">GNED 06 5:00 PM - 7:00 PM</p>
+                        <p class="ml-4 text-gray-500">Subject Teacher</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">GNED 06 5:00 PM - 7:00 PM</p>
+                        <p class="ml-4 text-gray-500">Subject Teacher</p>
+                    </div>
+                </div>
+                <div class="w-2"></div>
+            </div>
         <!-- Add more timeline items as needed -->
       </div>
+    </div>
+    
+     <!-- //ANCHOR about schedule -->
+     <div class="w-[100%] h-64 bg-blue-600 flex justify-center my-12 items-center">
+        <h1 class="text-6xl font-black text-black m">Educational Background</h1>
+     </div>
+     <div class="flex justify-around">
+        <img class="hidden md:block" width="200px" src="https://i.pinimg.com/564x/b6/53/b7/b653b7973924ad2f48f3aaa4299430ed.jpg" alt="image">
+        <img class="hidden md:block" width="200px" src="https://i.pinimg.com/564x/b6/53/b7/b653b7973924ad2f48f3aaa4299430ed.jpg" alt="image">
+        <img class="hidden md:block" width="200px" src="https://i.pinimg.com/564x/b6/53/b7/b653b7973924ad2f48f3aaa4299430ed.jpg" alt="image">
+        <img class="hidden md:block" width="200px" src="https://i.pinimg.com/564x/b6/53/b7/b653b7973924ad2f48f3aaa4299430ed.jpg" alt="image">
+        <img class="hidden md:block" width="200px" src="https://i.pinimg.com/564x/b6/53/b7/b653b7973924ad2f48f3aaa4299430ed.jpg" alt="image">
+        <img class="hidden md:block" width="200px" src="https://i.pinimg.com/564x/b6/53/b7/b653b7973924ad2f48f3aaa4299430ed.jpg" alt="image"> 
+    </div>
 </body>
 </html>
